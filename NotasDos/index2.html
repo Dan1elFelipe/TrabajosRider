@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/NotasDos/estilo.css">
+    <title>NotasDos CRUD</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Notas</h1>
+        <div class="form-container">
+            <h2>Ingresar Datos</h2>
+            <input type="number" id="identificacion" placeholder="Identificación">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="number" id="nota1" placeholder="Nota 1">
+            <input type="number" id="nota2" placeholder="Nota 2">
+            <input type="number" id="nota3" placeholder="Nota 3">
+            <button id="agregar">Agregar</button>
+        </div>
+        <div class="table-container">
+            <h2>Notas Registradas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Identificación</th>
+                        <th>Nombre</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Nota Definitiva</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/NotasDos/app2.js"></script>
+</body>
+</html>
